@@ -1,6 +1,6 @@
 {{ define "main" }}
 <section id="main">
-<title id="title">{{ .Title }} - </title>
+<title>{{ .Title }} - </title>
   {{ if isset .Params "featured_image" }}
     <img src="{{ .Params.Featured_image }}" class="img-thumbnail " alt="">
     <hr>
@@ -10,6 +10,8 @@
     <div class="alert alert-info" role="alert">
       <h4 id="date">Published : {{ .Date.Format "Monday Jan 2, 2006" }} </h4>
     </div>
+
+{{ partial "share-buttons" . }
     
   </section>
   <h1 id="title" class="container">{{ .Title }}</h1>
