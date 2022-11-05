@@ -1,0 +1,16 @@
+baseURL = 'http://blog-idnewz.pages.dev/'
+languageCode = 'en-us'
+title = 'ID Newz blog'
+theme = 'idnewz'
+
+
+[related]
+  includeNewer = false
+  threshold = 80
+  toLower = false
+[[related.indices]]
+  name = 'keywords'
+  weight = 100
+[[related.indices]]
+  name = 'date'
+  weight = 10
